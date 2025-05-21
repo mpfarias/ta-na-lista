@@ -71,13 +71,13 @@ const Mapa = () => {
             >
               <div
                 style={{
-                  padding: "8px 12px",
+                  paddingBottom:"10px",
                   fontWeight: "bold",
                   fontSize: "16px",
                   borderBottom: "1px solid #ccc",
                   borderRadius: "4px 4px 0 0",
                   textAlign: "center",
-                  marginBottom: 45
+                  marginBottom: 4
                 }}
               >
                 {mercadoSelecionado.nome}
