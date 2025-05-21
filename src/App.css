@@ -1,0 +1,25 @@
+.custom-marker {
+  width: 48px;
+  height: 48px;
+  background: white;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  border: 2px solid #2c3e50;
+  overflow: hidden;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+  background: red;
+}
+
+.custom-marker:hover {
+  transform: scale(1.1) rotate(-45deg);
+}
+
+.marker-logo {
+  width: 100%;
+  height: 100%;
+  transform: rotate(45deg); /* Corrige a rotação interna */
+}
