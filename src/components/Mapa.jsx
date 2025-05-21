@@ -66,23 +66,38 @@ const Mapa = () => {
             position={mercadoSelecionado.localizacao}
             onCloseClick={() => setMercadoSelecionado(null)}
           >
-            <div style={{ width: "180px", padding: 0, textAlign: "center" }}>
-              <h3 style={{ marginTop: 0, fontSize: "16px" }}>
-                {mercadoSelecionado.nome}
-              </h3>
-              <button
+            <div
+              style={{ width: "180px", fontFamily: "sans-serif" }}
+            >
+              <div
                 style={{
-                  backgroundColor: "#1976d2",
-                  color: "#fff",
-                  border: "none",
-                  padding: "5px 12px",
-                  borderRadius: "5px",
-                  cursor: "pointer",
+                  padding: "8px 12px",
+                  fontWeight: "bold",
+                  fontSize: "16px",
+                  borderBottom: "1px solid #ccc",
+                  borderRadius: "4px 4px 0 0",
+                  textAlign: "center",
+                  marginBottom: 45
                 }}
-                onClick={() => alert("Ver preços ainda não implementado")}
               >
-                Ver preços
-              </button>
+                {mercadoSelecionado.nome}
+              </div>
+              <div style={{ padding: "12px", textAlign: "center" }}>
+                <button
+                  style={{
+                    backgroundColor: "#1976d2",
+                    color: "#fff",
+                    border: "none",
+                    padding: "6px 12px",
+                    borderRadius: "4px",
+                    cursor: "pointer",
+                    fontSize: "14px",
+                  }}
+                  onClick={() => alert("Ver preços ainda não implementado")}
+                >
+                  Ver preços
+                </button>
+              </div>
             </div>
           </InfoWindow>
         )}
